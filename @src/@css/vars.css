@@ -1,0 +1,8 @@
+body {
+    margin: 0;
+    background-color: #f0f0f0;
+    line-height: normal;
+  }
+  :root {
+    --font-size: 16px;
+  }
