@@ -1,13 +1,10 @@
 /* Navigation Interactive */
-.nav-list__nav-link:hover{  
-border-bottom: #FF9900 solid 3px;
+.nav-list__nav-link:hover,
+.nav-list__nav-link:focus,
+.nav-list__nav-link:active {
+  border-bottom: 2px solid #333;
+  transition: border-bottom 0.3s ease;
 }
-.nav-list__nav-link:focus{  
-    color:#E1670E;
-}
-.nav-list__nav-link:active{
-    
-}  
 
 /* Hero Interactive */
 .hero-section__btn:hover{
