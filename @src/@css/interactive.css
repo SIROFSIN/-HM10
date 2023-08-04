@@ -1,9 +1,8 @@
 /* Navigation Interactive */
-.nav-list__nav-link:hover,
-.nav-list__nav-link:focus,
-.nav-list__nav-link:active {
-  border-bottom: 2px solid #333;
-  transition: border-bottom 0.3s ease;
+.nav-list__nav-link:hover::before,
+.nav-list__nav-link:focus::before,
+.nav-list__nav-link:active::before {
+  transform: scaleX(1);
 }
 
 /* Hero Interactive */
