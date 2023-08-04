@@ -1,0 +1,19 @@
+@media (max-width: 1919px) {
+    /* Ваши стили для адаптации под экраны шириной менее 1920px */
+    /* Например: */
+.header__logo{ 
+left: 45px;
+}
+.header__nav-container{
+    left: 998px;
+}
+.header__search-btn{
+    left: 1790px;
+}
+.hero-section{
+    margin-left: 45px;
+    margin-left: 45px;
+}
+    /* Добавьте дополнительные стили по мере необходимости */
+  }
+  
