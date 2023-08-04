@@ -1,11 +1,30 @@
 /* Navigation Interactive */
 .nav-list__nav-link:hover::before,
-.nav-list__nav-link:focus::before,
 .nav-list__nav-link:active::before {
   transform: scaleX(1);
+}
+.nav-list__nav-link:focus-visible::before{
+  outline: none;
+  transform: scaleX(1);
+}
+.header__search-btn:hover::before{
+  opacity: 10%;
+}
+.header__search-btn:focus-visible::before{
+  opacity: 10%;
+}
+.header__search-btn:active::before{
+  opacity: 20%;
 }
 
 /* Hero Interactive */
 .hero-section__btn:hover{
-
+  background: #ffb84d
 }
+.hero-section__btn:focus-visible{
+  background: #ffb84d;
+}
+.hero-section__btn:active{
+  background: #e1670e;
+}
+
