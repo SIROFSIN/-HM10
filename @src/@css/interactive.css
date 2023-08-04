@@ -28,3 +28,15 @@
   background: #e1670e;
 }
 
+/* About Us Interactive */
+.pic__caption-btn:hover{
+  opacity: 100%;
+  background: #F90
+}
+.pic__caption-btn:focus-visible{
+  background: #F90;
+}
+.pic__caption-btn:active{
+  background: rgb(241, 146, 2);
+}
+
