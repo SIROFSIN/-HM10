@@ -189,6 +189,10 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
 }
+.extended-content-grid-wrapper__pic-overlay {
+  position: relative;
+  display: inline-block;
+}
 .pic__caption-box{
   /*Layout */
   display: flex;
@@ -198,17 +202,20 @@
   height: 96px;
   top: 476px;
   left: 50px;
+  transition: all 0.3s ease;
 }
 .pic__caption-box::before{
   content: "";
-  display: flex;
+  display: block;
   position: absolute;
+  top: -50px;
   left: -50px;
   width: 868px;
   height: 196px;
-  flex-shrink: 0;
-  background-color: #1d1d1d;
-  opacity: 50%;
+  background-color: rgba(29, 29, 29, 0.5);
+  opacity: 0%;
+  transition: all 0.3s ease;
+  pointer-events: none;
 }
 .pic__caption {
   /*Layout */
@@ -217,14 +224,16 @@
   z-index: 2;
   width: 454px;
   height: 96px;
-  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
   /*Typography */
   color: #FFF;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 32px; 
+  line-height: 32px;
 }
 .pic__caption-btn {
   /*Layout */
@@ -236,7 +245,9 @@
   border: 3px solid #F90;
   position: relative;
   left: 155px;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease,opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
 /*Typography */
   color: #FFF;
   font-family: "Montserrat", sans-serif;

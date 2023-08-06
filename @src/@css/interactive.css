@@ -29,6 +29,17 @@
 }
 
 /* About Us Interactive */
+.extended-content-grid-wrapper__pic-overlay:hover .pic__caption-box::before {
+  opacity: 100%;
+}
+.extended-content-grid-wrapper__pic-overlay:hover .pic__caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+.extended-content-grid-wrapper__pic-overlay:hover .pic__caption-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
 .pic__caption-btn:hover{
   opacity: 100%;
   background: #F90
