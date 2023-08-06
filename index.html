@@ -14,6 +14,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="./@src/@js/hero-carousel.js"></script>
+    <script src="./@src/@js/manual-slider.js"></script>
 </head>
 <body>
   <header class="header">
@@ -22,7 +23,7 @@
       <ul class="nav-container__nav-list">
         <li class="nav-list__nav-item"><a href="#au" class="nav-list__nav-link">О нас</a></li>
         <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-link">Проекты</a></li>
-        <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-link">Этапы</a></li>
+        <li class="nav-list__nav-item"><a href="#hww" class="nav-list__nav-link">Этапы</a></li>
         <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-link">Отзывы</a></li>
         <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-link">Контакты</a></li>
       </ul>
@@ -78,6 +79,53 @@
             </div>
                 </div>
       </section>
-    </div>  
+      <section id="hww" class="how-we-work-section">
+        <h2 class="how-we-work-section__title">Как мы работаем</h2>
+        <div class="how-we-work-section__slide-choose-btns-wrapper">
+          <button type="button" data-step="0" id="slide-btn-1" class="slide-choose-btns-wrapper__slide-choose-btn">Шаг 1</button>
+          <button type="button" data-step="1" class="slide-choose-btns-wrapper__slide-choose-btn">Шаг 2</button>
+          <button type="button" data-step="2" class="slide-choose-btns-wrapper__slide-choose-btn">Шаг 3</button>
+          <button type="button" data-step="3" class="slide-choose-btns-wrapper__slide-choose-btn">Шаг 4</button>
+        </div>
+        <div id="slider" class="how-we-work-section__manual-slider-box">
+          <div class="manual-slider-box__slide-item manual-slider-box__slide-item-1" style="display: block;">
+          <h2 class="slide-item-1__title">Проводим консультацию</h2>
+          <p class="slide-item-1__text">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+          <div class="slide-item-1__buttons-wrapper">
+            <button type="button" class="buttons-wrapper__btn-more">Подробнее</button>
+            <button type="button" class="buttons-wrapper__btn-agr">Договор</button>
+          </div>
+          <img class="slide-item-1__pic" src="./@img/how-we-work/slide01-pic.jpg" alt="">
+        </div>
+          <div class="manual-slider-box__slide-item manual-slider-box__slide-item-2">
+            <h2 class="slide-item-1__title">Составляем смету</h2>
+          <p class="slide-item-1__text">Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.</p>
+          <div class="slide-item-1__buttons-wrapper">
+            <button type="button" class="buttons-wrapper__btn-more">Подробнее</button>
+            <button type="button" class="buttons-wrapper__btn-agr">Договор</button>
+          </div>
+          <img class="slide-item-2__pic" src="./@img/how-we-work/slide02-pic.jpg" alt="">
+        </div>
+          </div>
+          <div class="manual-slider-box__slide-item manual-slider-box__slide-item-3">
+            <h2 class="slide-item-3__title">Привлекаем подрядчиков</h2>
+          <p class="slide-item-3__text">Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.</p>
+          <div class="slide-item-3__buttons-wrapper">
+            <button type="button" class="buttons-wrapper__btn-more">Подробнее</button>
+            <button type="button" class="buttons-wrapper__btn-agr">Договор</button>
+          </div>
+          <img class="slide-item-3__pic" src="./@img/how-we-work/slide03-pic.jpg" alt="">
+        </div>
+        <div class="manual-slider-box__slide-item manual-slider-box__slide-item-3">
+          <h2 class="slide-item-3__title">Инспектируем все этапы работ</h2>
+        <p class="slide-item-3__text">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.</p>
+        <div class="slide-item-3__buttons-wrapper">
+          <button type="button" class="buttons-wrapper__btn-more">Подробнее</button>
+          <button type="button" class="buttons-wrapper__btn-agr">Договор</button>
+        </div>
+        <img class="slide-item-4__pic" src="./@img/how-we-work/slide04-pic.jpg" alt="">
+      </div>
+          </section>
+          </div> 
 </body>
 </html>

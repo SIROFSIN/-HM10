@@ -19,13 +19,13 @@
 
 /* Hero Interactive */
 .hero-section__btn:hover{
-  background: #ffb84d
+  background-color: rgb(255, 145, 0);
 }
 .hero-section__btn:focus-visible{
-  background: #ffb84d;
+  background-color: #F90;
 }
 .hero-section__btn:active{
-  background: #e1670e;
+  background-color: #E1670E
 }
 
 /* About Us Interactive */
@@ -50,4 +50,37 @@
 .pic__caption-btn:active{
   background: rgb(241, 146, 2);
 }
-
+/*How We Work Interactive*/
+.slide-choose-btns-wrapper__slide-choose-btn:hover{
+  color: #F90;
+}
+.slide-choose-btns-wrapper__slide-choose-btn:focus{
+  color: #F90;;
+}
+.slide-choose-btns-wrapper__slide-choose-btn:active{
+  color: #E1670E;
+}
+.buttons-wrapper__btn-more:hover{
+  background-color: #F90;
+}
+.buttons-wrapper__btn-more:focus{
+  background-color: #F90;
+}
+.buttons-wrapper__btn-more:active{
+  background-color: #E1670E
+}
+.buttons-wrapper__btn-agr:hover{
+  background-color: #1d1d1d;
+  border: #1d1d1d solid 1px;
+  color: #ffffff;
+}
+.buttons-wrapper__btn-agr:focus-visible{
+  background-color: #1d1d1d;
+  border: #1d1d1d solid 1px;
+  color: #ffffff;
+}
+.buttons-wrapper__btn-agr:active{
+  background-color: #111111;
+  border: #111111 solid 1px;
+  color: #ffffff;
+}
