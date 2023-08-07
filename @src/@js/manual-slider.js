@@ -7,31 +7,44 @@ document.addEventListener('DOMContentLoaded', function() {
     // Установка фокуса на первой кнопке при загрузке страницы
     $slideBtns.eq(0).addClass('active').focus();
   
-    // Обработчик события для кнопок внутри блока
-    $slideBtns.on('click', function() {
+    // Обработчик события mousedown для кнопок внутри блока
+    $slideBtns.on('mousedown', function() {
       selectedBtnIndex = $slideBtns.index(this);
-      $slideBtns.removeClass('active'); // Убираем активное состояние с других кнопок
-      $(this).addClass('active').focus(); // Добавляем активное состояние и устанавливаем фокус на кликнутую кнопку
+      $slideBtns.removeClass('active');
+      $(this).addClass('active');
     });
   
-    // Обработчик события для блока, предотвращающий уход фокуса при клике внутри блока
-    $slideWrapper.on('mousedown', function(event) {
-      event.preventDefault();
+    // Создаем экземпляр focus-trap
+    var focusTrap = createFocusTrap($slideWrapper[0], {
+      clickOutsideDeactivates: true
     });
   
     // Обработчик события для документа
-    $(document).on('mouseup', function(event) {
+    $(document).on('mousedown', function(event) {
       var $target = $(event.target);
       var isInsideSlideWrapper = $target.closest('.how-we-work-section__slide-choose-btns-wrapper').length > 0;
   
       if (!isInsideSlideWrapper && !$target.is($slideBtns)) {
         setTimeout(function() {
-          $slideBtns.eq(selectedBtnIndex).focus(); // Установка фокуса на сохраненную кнопку через setTimeout
+          focusTrap.activate();
+          $slideBtns.eq(selectedBtnIndex).focus();
         }, 0);
       }
     });
-  });
   
+    // Обработчик события keydown для кнопок
+    $slideBtns.on('keydown', function(event) {
+      if (event.which === 9) { // Таб
+        event.preventDefault();
+        var currentIndex = $slideBtns.index(this);
+        var nextIndex = event.shiftKey ? currentIndex - 1 : currentIndex + 1;
+  
+        if (nextIndex >= 0 && nextIndex < $slideBtns.length) {
+          $slideBtns.eq(nextIndex).focus();
+        }
+      }
+    });
+  });    
 });
   $(document).ready(function manualSlider() {
       // Получаем все кнопки выбора слайдов
