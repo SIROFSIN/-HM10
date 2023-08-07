@@ -1,33 +1,37 @@
 document.addEventListener('DOMContentLoaded', function() {
   $(document).ready(function() {
-    // Получаем все кнопки слайдов
     var $slideBtns = $('.slide-choose-btns-wrapper__slide-choose-btn');
-    // Получаем область в которой расположены кнопки (здесь необходимо сохранять фокус)
     var $slideWrapper = $('.how-we-work-section__slide-choose-btns-wrapper');
-    // Индекс выбранной кнопки
     var selectedBtnIndex = 0;
-    // Установка фокуса на первой кнопке при загрузке страницы
-    $slideBtns.eq(0).focus();
   
-    // Функция обработки клика (с переводом фокуса)
+    // Установка фокуса на первой кнопке при загрузке страницы
+    $slideBtns.eq(0).addClass('active').focus();
+  
+    // Обработчик события для кнопок внутри блока
     $slideBtns.on('click', function() {
       selectedBtnIndex = $slideBtns.index(this);
-      $(this).focus();
+      $slideBtns.removeClass('active'); // Убираем активное состояние с других кнопок
+      $(this).addClass('active').focus(); // Добавляем активное состояние и устанавливаем фокус на кликнутую кнопку
     });
-
-    // Функция сохранения фокуса внутри заданой области (блока)
+  
+    // Обработчик события для блока, предотвращающий уход фокуса при клике внутри блока
     $slideWrapper.on('mousedown', function(event) {
       event.preventDefault();
     });
-
-    // Функция сохранения фокуса на последнем выбранном элементе при клике вне области (блока)
-    $(document).on('mousedown', function(event) {
-      if (!$(event.target).closest('.how-we-work-section__slide-choose-btns-wrapper').length && !$target.is($slideBtns)) {
+  
+    // Обработчик события для документа
+    $(document).on('mouseup', function(event) {
+      var $target = $(event.target);
+      var isInsideSlideWrapper = $target.closest('.how-we-work-section__slide-choose-btns-wrapper').length > 0;
+  
+      if (!isInsideSlideWrapper && !$target.is($slideBtns)) {
         setTimeout(function() {
-          $slideBtns.eq(selectedBtnIndex).focus(); }, 0);
+          $slideBtns.eq(selectedBtnIndex).focus(); // Установка фокуса на сохраненную кнопку через setTimeout
+        }, 0);
       }
     });
   });
+  
 });
   $(document).ready(function manualSlider() {
       // Получаем все кнопки выбора слайдов

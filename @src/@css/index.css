@@ -390,6 +390,9 @@
   margin-right: 85px;
   transition: color 0.3s ease;
 }
+.slide-choose-btns-wrapper__slide-choose-btn.active{
+  color:#F90;
+}
 .how-we-work-section__manual-slider-box{
   /*Layout */
   display: flex;
