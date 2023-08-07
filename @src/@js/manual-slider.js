@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Функция сохранения фокуса на последнем выбранном элементе при клике вне области (блока)
     $(document).on('mousedown', function(event) {
-      if (!$(event.target).closest('.how-we-work-section__slide-choose-btns-wrapper').length) {
+      if (!$(event.target).closest('.how-we-work-section__slide-choose-btns-wrapper').length && !$target.is($slideBtns)) {
         setTimeout(function() {
           $slideBtns.eq(selectedBtnIndex).focus(); }, 0);
       }
