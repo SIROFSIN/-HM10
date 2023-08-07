@@ -28,7 +28,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-  
 });
   $(document).ready(function manualSlider() {
       // Получаем все кнопки выбора слайдов
