@@ -61,7 +61,7 @@
   color: #E1670E;
 }
 .buttons-wrapper__btn-more:hover{
-  background-color: #F90;
+  background-color: rgb(245, 148, 2);
 }
 .buttons-wrapper__btn-more:focus{
   background-color: #F90;
