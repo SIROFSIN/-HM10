@@ -21,8 +21,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     activeSvgEllipse.setAttribute('fill', '#ECECEC');
                     activeSvgPath.setAttribute('fill', '#666666');
                     activeAccordionButton.style.transform = 'rotateZ(0deg)';
+                    activeAccordion.classList.remove('active');
                 }
 
+                accordionBoxItem.classList.add('active');
                 activeAccordion = accordionBoxItem;
             }
 
@@ -39,13 +41,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 accordionBoxItem.style.marginBottom = (parseInt(accordionItemAnswer.style.maxHeight) + 10) + 'px';
                 accordionItemButton.style.transform = 'rotateZ(45deg)';
                 element.style.color = '#F90';
-                svgEllipse.setAttribute('fill', '#F90'); // Применяем новый цвет для ellipse
-                svgPath.setAttribute('fill', '#FFF'); // Применяем новый цвет для path
+                svgEllipse.setAttribute('fill', '#F90');
+                svgPath.setAttribute('fill', '#FFF');
                 activeAccordion = accordionBoxItem;
             }
+            
+            // Update the border style for the last inactive item
+            updateLastInactiveBorder();
         });
     });
 });
+
+function updateLastInactiveBorder() {
+    const allItems = document.querySelectorAll('.accordion-box__accordion-item');
+    const inactiveItems = Array.from(allItems).filter(item => item !== activeAccordion);
+
+    inactiveItems.forEach(item => {
+        item.style.borderBottom = '';
+    });
+
+    if (inactiveItems.length > 0) {
+        const lastInactiveItem = inactiveItems[inactiveItems.length - 1];
+        lastInactiveItem.style.borderBottom = '1px solid #CACACA';
+    }
+}
+
+
 
 
 
