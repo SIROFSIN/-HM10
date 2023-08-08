@@ -85,3 +85,16 @@
   color: #ffffff;
 }
 /*FAQ Interactive*/
+.accordion-box__accordion-item.active:last-child:focus{
+  border-bottom: 1px solid #ffffff;
+}
+/*Footer Interactive*/
+.request-imput-box__sumbit-btn:hover{
+  background-color: #F90;
+}
+.request-imput-box__sumbit-btn:focus-visible{
+  background-color: #F90;
+}
+.request-imput-box__sumbit-btn:active{
+  background-color: #E1670E !important;
+}

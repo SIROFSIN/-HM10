@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     var $slideWrapper = $('.how-we-work-section__slide-choose-btns-wrapper');
     var selectedBtnIndex = 0;
   
-    // Установка фокуса на первой кнопке при загрузке страницы
-    $slideBtns.eq(0).addClass('active').focus();
+
   
     // Обработчик события mousedown для кнопок внутри блока
     $slideBtns.on('mousedown', function() {
@@ -13,12 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       $slideBtns.removeClass('active');
       $(this).addClass('active');
     });
-  
-    // Создаем экземпляр focus-trap
-    var focusTrap = createFocusTrap($slideWrapper[0], {
-      clickOutsideDeactivates: true
-    });
-  
+
     // Обработчик события для документа
     $(document).on('mousedown', function(event) {
       var $target = $(event.target);

@@ -85,7 +85,7 @@
   max-width: 1770px;
   height: auto;
   margin-right: 75px;
-  margin-left: 45px;
+  margin-left: 50px;
   background-color: #ffffff;
   line-height: normal;
 }
@@ -94,7 +94,7 @@
   max-width: 1770px;
   height: 620px;
   margin-right: 75px;
-  margin-left: 75px;
+  margin-left: 50px;
   background-color: #ff8239;
   line-height: normal;
 }
@@ -263,7 +263,7 @@
 .adv-points-box__adv-point-top {
   /*Layout */
   display: flex;
-  width: 855px;
+  width: 870px;
   height: 295px;
   border: #CACACA solid 1px;
 }
@@ -316,7 +316,7 @@
     display: flex;
     position: relative;
     top: 32px;
-    width: 855px;
+    width: 870px;
     height: 295px;
     border: #CACACA solid 1px;
 }
@@ -576,6 +576,7 @@
 .accordion-box__accordion-item:last-child:not(.active) {
   border-bottom: 1px solid #CACACA; /* Замените на нужный цвет и стиль границы */
 }
+
 .accordion-item__q{
   display: block;
   padding: 40px;
@@ -623,3 +624,152 @@
   top: 370px;
   background-color: #1d1d1d;
 }
+.footer-section__left-allined-content-box{
+  display: block;
+  position: relative;
+  top: 50px;
+  left: 40px;
+  width: 252px;
+  height: 494px;
+  flex-shrink: 0;
+}
+.left-allined-content-box__links-wrapper{
+  display: block;
+  position: relative;
+  top: 20px;
+}
+.links-wrapper__link a{
+  text-decoration: none;
+  color: #CACACA;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px; /* 200% */
+}
+.left-allined-content-box__socials-box{
+  display: flex;
+  width: 230px;
+  height: 60px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 90px;
+  left: 10px;
+}
+.footer-section__request-imput-box{
+  display: block;
+  width: 570px;
+  height: 494px;
+  position: relative;
+  left: 675px;
+  bottom: 450px;
+}
+.request-imput-box__heading{
+  /*Typography */
+  color: #CACACA;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.request-imput-box__full-name{
+  display: block;
+  position: relative;
+  width: 570px;
+  height: 60px;
+  color: #CACACA;
+  background-color: #414141;
+}
+.request-imput-box__full-name::placeholder{
+  padding-left: 24px;
+  padding-top: 14px;
+}
+
+.request-imput-box__email{
+  display: block;
+  position: relative;
+  bottom: 30px;
+  width: 570px;
+  height: 60px;
+  color: #CACACA;
+  background-color: #414141;
+}
+.request-imput-box__email::placeholder{
+  padding-left: 24px;
+  padding-top: 14px;
+}
+.request-imput-box__message{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  bottom: 60px;
+  width: 570px;
+  height: 150px;
+  color: #CACACA;
+  background-color: #414141;
+}
+.request-imput-box__message::placeholder{
+  padding-left: 24px;
+  padding-top: 14px;
+}
+.request-imput-box__sumbit-btns-box{
+  display: flex;
+  flex-direction: row;
+  width: 570px;
+  height: 58px;
+}
+.request-imput-box__sumbit-btn{
+  /*Layout */
+  display: flex;
+  position: relative;
+  bottom: 65px;
+  width: 269px;
+  height: 58px;
+  padding: 19px 38px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #F90 !important;
+  transition: background 0.3s ease;
+  /*Typography */
+  color: #FFF;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.request-imput-box__consent{
+  display: flex;
+  position: relative;
+  left: 22px;
+  gap: 5px;
+  bottom: 50px;
+  height: 32px;
+  align-items: center;
+  /*Typography */
+  color: #CACACA !important;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
+.footer-section__right-alligned-content-box{
+  display: block;
+  position: absolute;
+  left: 1482px;
+  bottom: 137px;
+  width: 363px;
+  /*Typography */
+  color: #CACACA;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 200% */
+}
+

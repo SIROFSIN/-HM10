@@ -11,19 +11,18 @@
     <link rel="stylesheet" href="./@src/@css/adaptive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"/>
     <link rel="stylesheet" type="text/css" href="./@src/@css/carousel-slick.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://unpkg.com/focus-trap@7.0.0/dist/focus-trap.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./@src/@js/hero-carousel.js"></script>
-    <script src="./@src/@js/manual-slider.js"></script>
+    <!-- Это комментарий -->
+<script src="./@src/@js/manual-slider.js"></script>
     <script src="./@src/@js/accordion.js"></script>
 </head>
 <body>
-  <header class="header">
+  <header id="header" class="header">
     <img class="header__logo" src="./@img/header/logo.svg" alt=" ЕВКЛИД LOGO" >
     <nav class="header__nav-container">
       <ul class="nav-container__nav-list">
@@ -52,9 +51,8 @@
           Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
         </h2>
     </div>
-    <button type="button" class="hero-section__btn">
-      Заказать расчёт
-    </button>
+    <a href="#footer" class="hero">
+    <button type="button" class="hero-section__btn">Заказать расчёт</button></a>
   </section>
     <div class="main-content-zone">
       <section id="au" class="about-us-section">
@@ -189,8 +187,44 @@
             </div>
         </section>
     </div>
-<footer class="footer-section">
-
-</footer> 
+<footer id="footer" class="footer-section">
+  <div class="footer-section__left-allined-content-box">
+    <img class="left-allined-content-box__logo" src="./@img/footer/footer-logo.svg" alt="footer-logo">
+    <ul class="left-allined-content-box__links-wrapper">
+      <li class="links-wrapper__link"><a href="#" >О нас</a></li>
+      <li class="links-wrapper__link"><a href="#" >Проекты</a></li>
+      <li class="links-wrapper__link"><a href="#" >Отзывы</a></li>
+      <li class="links-wrapper__link"><a href="#" >Договор оферты</a></li>
+      <li class="links-wrapper__link"><a href="#" >Договор подряда</a></li>
+      <li class="links-wrapper__link"><a href="#" >Конфиденциальность</a></li>
+      <li class="links-wrapper__link"><a href="#" >Партнёрское соглашение</a></li>
+    </ul>
+    <div class="left-allined-content-box__socials-box">
+      <img src="./@img/footer/fb.svg" alt="Facebook">
+      <img src="./@img/footer/instagram.svg" alt="Instagram">
+      <img src="./@img/footer/vk.svg" alt="VK">
+    </div>
+  </div>
+    <div class="footer-section__request-imput-box">
+      <h2 class="request-imput-box__heading">Оставить заявку</h2>
+      <form action="/submit_form" method="post">
+        <label for="full_name"></label><br>
+        <input class="request-imput-box__full-name" type="text" id="full_name" name="full_name" placeholder="Фамилия, имя и отчество*" required><br><br>
+        <label for="email"></label><br>
+        <input class="request-imput-box__email" type="email" id="email" name="email" placeholder="E-mail" required><br><br>
+        <label for="message"></label><br>
+        <textarea class="request-imput-box__message" id="message" name="message" rows="4" cols="50" placeholder="Сообщение" required></textarea><br><br>
+        <div class="request-imput-box__sumbit-btns-box">
+        <input type="submit" class="request-imput-box__sumbit-btn" value="Отправить данные">
+        <label class="request-imput-box__consent"><input type="checkbox"class="request-imput-box__chckbx" name="consent" required>Согласен на обработку данных</label><br><br>
+        </div>
+    </form>
+    </div>
+    <div class="footer-section__right-alligned-content-box">
+      <p class="right-alligned-content-box__text">
+        Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. 
+      </p>
+    </div>
+</footer>
 </body>
 </html>
