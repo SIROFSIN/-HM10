@@ -62,7 +62,7 @@ function updateLastInactiveBorder() {
 
     if (inactiveItems.length > 0) {
         const lastInactiveItem = inactiveItems[inactiveItems.length - 1];
-        lastInactiveItem.style.borderBottom = '1px solid #CACACA';
+        lastInactiveItem.style.borderBottom = '1px solid #ccc';
     }
 }
 
