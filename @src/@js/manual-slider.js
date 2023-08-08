@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }, 0);
       }
     });
-  
+
     // Обработчик события keydown для кнопок
     $slideBtns.on('keydown', function(event) {
       if (event.which === 9) { // Таб

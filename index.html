@@ -11,11 +11,16 @@
     <link rel="stylesheet" href="./@src/@css/adaptive.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"/>
     <link rel="stylesheet" type="text/css" href="./@src/@css/carousel-slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://unpkg.com/focus-trap@7.0.0/dist/focus-trap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./@src/@js/hero-carousel.js"></script>
     <script src="./@src/@js/manual-slider.js"></script>
+    <script src="./@src/@js/accordion.js"></script>
 </head>
 <body>
   <header class="header">
@@ -33,25 +38,25 @@
         <img src="./@img/header/search-ico.svg" alt="Search button icon">
       </button>
   </header>
+  <section class="hero-section">
+    <div class="hero-section__carousel">
+      <img src="./@img/hero/carousel_01.jpg" alt="" class="carousel__pic">
+      <img src="./@img/hero/carousel_02.jpg" alt="" class="carousel__pic">
+      <img src="./@img/hero/carousel_03.jpg" alt="" class="carousel__pic">
+    </div>
+    <div class="hero-section__content-box">
+        <h2 class="content-box__title">
+          Проектные решения любой сложности
+        </h2>
+        <h2 class="content-box__title-description">
+          Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+        </h2>
+    </div>
+    <button type="button" class="hero-section__btn">
+      Заказать расчёт
+    </button>
+  </section>
     <div class="main-content-zone">
-      <section class="hero-section">
-        <div class="hero-section__carousel">
-          <img src="./@img/hero/carousel_01.jpg" alt="" class="carousel__pic">
-          <img src="./@img/hero/carousel_02.jpg" alt="" class="carousel__pic">
-          <img src="./@img/hero/carousel_03.jpg" alt="" class="carousel__pic">
-        </div>
-        <div class="hero-section__content-box">
-            <h2 class="content-box__title">
-              Проектные решения любой сложности
-            </h2>
-            <h2 class="content-box__title-description">
-              Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
-            </h2>
-        </div>
-        <button type="button" class="hero-section__btn">
-          Заказать расчёт
-        </button>
-      </section>
       <section id="au" class="about-us-section">
         <h2 class="about-us-section__title">О нас</h2>
         <p class="about-us-section__main-text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
@@ -127,6 +132,62 @@
         <img class="slide-item-4__pic" src="./@img/how-we-work/slide04-pic.jpg" alt="">
       </div>
           </section>
-          </div> 
+        <section id="faq" class="faq-section">
+          <h2 class="faq-section__title">Часто задаваемые вопросы</h2>
+          <div class="faq-section__accordion-box">
+            <div class="accordion-box__accordion-item">
+              <button type="button" class="accordion-item__button">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
+                  </svg>
+                  
+                  
+              </button>
+              <h2 class="accordion-item__q">Из чего формируется конечная стоимость проекта?</h2>
+              <p class="accordion-item__a">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+            </div>
+            <div class="accordion-box__accordion-item">
+              <button type="button" class="accordion-item__button">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
+                  </svg>
+              </button>
+              <h2 class="accordion-item__q">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h2>
+              <p class="accordion-item__a">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+            </div>
+            <div class="accordion-box__accordion-item">
+              <button type="button" class="accordion-item__button">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
+                  </svg>
+              </button>
+              <button type="button" class="accordion-item__q">Я выбираю между разными компаниями. В чём ваше отличие?</button>
+              <p class="accordion-item__a">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+            </div>
+            <div class="accordion-box__accordion-item">
+              <button type="button" class="accordion-item__button">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
+                  </svg>
+              </button>
+              <h2 class="accordion-item__q">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</h2>
+              <p class="accordion-item__a">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+            </div>
+            <div class="accordion-box__accordion-item">
+              <button type="button" class="accordion-item__button">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
+                  </svg>
+              </button>
+              <h2 class="accordion-item__q">Могу ли я вернуть деньги на каком-либо из этапов работ?</h2>
+              <p class="accordion-item__a">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+            </div>
+        </section>
+    </div> 
 </body>
 </html>

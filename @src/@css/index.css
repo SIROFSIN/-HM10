@@ -85,8 +85,8 @@
   max-width: 1770px;
   height: auto;
   margin-right: 75px;
-  margin-left: 75px;
-  background-color: #f0f0f0;
+  margin-left: 45px;
+  background-color: #ffffff;
   line-height: normal;
 }
 .hero-section {
@@ -110,7 +110,7 @@
   max-height: 250px;
   position: relative;
   bottom: 550px;
-  left: 0px;
+  left: 75px;
   color: #ffffff;
 }
 .content-box__title{
@@ -140,7 +140,7 @@
   flex-shrink: 0;
   background: #F90;
   position: relative;
-  left: 0px;
+  left: 75px;
   bottom: 408px;
   /*Typography */
   color: #FFF;
@@ -263,7 +263,7 @@
 .adv-points-box__adv-point-top {
   /*Layout */
   display: flex;
-  width: 870px;
+  width: 855px;
   height: 295px;
   border: #CACACA solid 1px;
 }
@@ -316,7 +316,7 @@
     display: flex;
     position: relative;
     top: 32px;
-    width: 870px;
+    width: 855px;
     height: 295px;
     border: #CACACA solid 1px;
 }
@@ -536,4 +536,76 @@
 .manual-slider-box__slide-item_manual-slider-box__slide-item-4{
   display: block;
   position: relative;
+}
+.faq-section{
+  position: relative;
+  width: 1770px;
+  height: auto;
+  top: 250px;
+}
+.faq-section__title{
+  /*Layout */
+  display: flex;
+  position: relative;
+  top: 0px;
+  left: -5px;
+  /*Typography */
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.faq-section__accordion-box{
+  display: block;
+  width: 1770px;
+  position: relative;
+  top: 32px;
+}
+.accordion-box__accordion-item{
+  display: block;
+  margin-bottom: 0;
+  position: relative;
+  width: 1770px;
+  height: 112px;
+  border-top: #CACACA solid 1px;
+  transition: margin-bottom 0.5s ease;
+}
+.accordion-item__q{
+  display: block;
+  padding: 40px;
+  padding-left: 0;
+  cursor: pointer;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 133%;
+  transition: all 0.5s ease;
+}
+.accordion-item__button{
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 30px;
+  left: 1720px;
+  cursor: pointer;
+  transform: rotateZ(0deg);
+  transition: all 0.5s ease;
+}
+.accordion-item__a{
+  /*Layout */
+  display: block;
+  max-height: 0;
+  overflow: hidden;
+  color: #333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 200%;
+  transition: max-height 0.5s ease;
 }
