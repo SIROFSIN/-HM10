@@ -69,6 +69,18 @@
     left: 1820px;
     top: 38px;
   }
+  .search-form-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
   .header__search-btn::before{
     content: "";
     display: flex;
@@ -79,6 +91,60 @@
     opacity: 0%;
     border-radius: 50%;
     transition: opacity 0.3s ease;
+  }
+  .search-form-container {
+    position: absolute;
+    top:30px;
+    right: -100%;
+    width: 100%;
+    height: 40px;
+    transition: right 0.3s ease;
+    z-index: 9999;
+  }
+  
+  .search-form {
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .search-input {
+    position: relative;
+    top: 15%;
+    width: 97%;
+    height: 60px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 36px;
+    padding-left: 1.6%;
+    color: #ADADAD;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  
+  .search-submit-btn {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 14px;
+    left: 15px;
+    padding: 8px 15px;
+    background-image: url("../../@img/header/search-ico-active.svg");
+    background-repeat: no-repeat;
+    cursor: pointer;
   }
 .main-content-zone {
   display: block;
@@ -657,15 +723,8 @@
   top: 90px;
   left: 10px;
 }
-.footer-section__request-imput-box{
-  display: block;
-  width: 570px;
-  height: 494px;
-  position: relative;
-  left: 675px;
-  bottom: 450px;
-}
 .request-imput-box__heading{
+  position: relative;
   /*Typography */
   color: #CACACA;
   font-family: "Montserrat", sans-serif;
@@ -674,48 +733,46 @@
   font-weight: 400;
   line-height: normal;
 }
-.request-imput-box__full-name{
+.footer-section__request-imput-box{
   display: block;
   position: relative;
+  left: 676px;
+  bottom: 425px;
+  width: 570px;
+  height: 494px;
+}
+.request-imput-box__full-name,
+.request-imput-box__email,
+.request-imput-box__message {
+  display: block;
+  position: relative;
+  top: 0px;
+  right: 0px;
   width: 570px;
   height: 60px;
   color: #CACACA;
   background-color: #414141;
+  padding: 5px 0 0 24px; /* Отступы как у placeholder */
+  margin-bottom: -25px; /* Отступ между полями ввода */
+  border: none; /* Убрать границу */
+  border-radius: 0; /* Убрать скругление */
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px; /* Или ваш размер шрифта */
 }
-.request-imput-box__full-name::placeholder{
-  padding-left: 24px;
-  padding-top: 14px;
+.request-imput-box__full-name::placeholder,
+.request-imput-box__email::placeholder{
+  position: relative;
+  bottom: 0px;
 }
 
-.request-imput-box__email{
-  display: block;
-  position: relative;
-  bottom: 30px;
-  width: 570px;
-  height: 60px;
-  color: #CACACA;
-  background-color: #414141;
-}
-.request-imput-box__email::placeholder{
-  padding-left: 24px;
-  padding-top: 14px;
-}
 .request-imput-box__message{
-  display: block;
-  position: relative;
-  overflow: hidden;
-  bottom: 60px;
-  width: 570px;
   height: 150px;
-  color: #CACACA;
-  background-color: #414141;
 }
-.request-imput-box__message::placeholder{
-  padding-left: 24px;
-  padding-top: 14px;
-}
+
 .request-imput-box__sumbit-btns-box{
   display: flex;
+  position: relative;
+  top: 75px;
   flex-direction: row;
   width: 570px;
   height: 58px;

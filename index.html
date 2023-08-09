@@ -17,9 +17,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="./@src/@js/hero-carousel.js"></script>
-    <!-- Это комментарий -->
-<script src="./@src/@js/manual-slider.js"></script>
+    <script src="./@src/@js/manual-slider.js"></script>
     <script src="./@src/@js/accordion.js"></script>
+    <script src="./@src/@js/search.js"></script>
 </head>
 <body>
   <header id="header" class="header">
@@ -32,10 +32,16 @@
         <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-link">Отзывы</a></li>
         <li class="nav-list__nav-item"><a href="#" class="nav-list__nav-link">Контакты</a></li>
       </ul>
-      </nav>
-      <button type="button" class="header__search-btn">
-        <img src="./@img/header/search-ico.svg" alt="Search button icon">
-      </button>
+    </nav>
+    <button type="button" class="header__search-btn">
+      <img src="./@img/header/search-ico.svg" alt="Search button icon">
+    </button>
+    <div class="search-form-container">
+      <form class="search-form">
+        <input type="text" class="search-input" placeholder="Что будем искать?">
+        <button type="submit" class="search-submit-btn"></button>
+      </form>
+    </div>      
   </header>
   <section class="hero-section">
     <div class="hero-section__carousel">
@@ -205,21 +211,22 @@
       <img src="./@img/footer/vk.svg" alt="VK">
     </div>
   </div>
-    <div class="footer-section__request-imput-box">
-      <h2 class="request-imput-box__heading">Оставить заявку</h2>
-      <form action="/submit_form" method="post">
+      <form action="/submit_form" method="post" class="footer-section__request-imput-box">
+        <h2 class="request-imput-box__heading">Оставить заявку</h2>
         <label for="full_name"></label><br>
+        <!-- Изменения здесь: добавлены классы для стилизации -->
         <input class="request-imput-box__full-name" type="text" id="full_name" name="full_name" placeholder="Фамилия, имя и отчество*" required><br><br>
         <label for="email"></label><br>
+        <!-- Изменения здесь: добавлены классы для стилизации -->
         <input class="request-imput-box__email" type="email" id="email" name="email" placeholder="E-mail" required><br><br>
         <label for="message"></label><br>
+        <!-- Изменения здесь: добавлены классы для стилизации -->
         <textarea class="request-imput-box__message" id="message" name="message" rows="4" cols="50" placeholder="Сообщение" required></textarea><br><br>
         <div class="request-imput-box__sumbit-btns-box">
         <input type="submit" class="request-imput-box__sumbit-btn" value="Отправить данные">
         <label class="request-imput-box__consent"><input type="checkbox"class="request-imput-box__chckbx" name="consent" required>Согласен на обработку данных</label><br><br>
         </div>
     </form>
-    </div>
     <div class="footer-section__right-alligned-content-box">
       <p class="right-alligned-content-box__text">
         Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов. 
