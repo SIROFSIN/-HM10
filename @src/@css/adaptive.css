@@ -19,18 +19,22 @@ left: 45px;
 }
     /* Добавьте дополнительные стили по мере необходимости */
 }
-@media (max-width: 768px) {
+@media (max-width: 320px) {
     .header{
-        width: 100% !important;
+        width: 320px;
         height: 69px;
     }
     .header__logo{
         display: flex;
-        width: 150px;
-        height: 40px;
-        left: 35%;
+        width: 110px;
+        height: 35px;
         justify-content: center;
         align-items: center;
+        left: 32.8%;
+        top: 3.5%;
+        }
+        .header__search-btn{
+            left: 85%;
+            top: 5%;
+        }
     }
-    /* Ваши стили для адаптации под экраны шириной менее 320px */
-}
