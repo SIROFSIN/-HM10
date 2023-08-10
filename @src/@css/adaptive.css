@@ -40,4 +40,8 @@ left: 45px;
         justify-content: center;
         align-items: center;
         }
+    .main-content-zone{
+        width: 86.9%;
+        height: auto;
+    }
     }
