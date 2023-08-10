@@ -35,8 +35,8 @@ left: 45px;
         }
     .header__search-btn{
         display: flex;
-        left: 90%;
-        top: 22px;
+        left: 85%;
+        top: 21px;
         justify-content: center;
         align-items: center;
         }
